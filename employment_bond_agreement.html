@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employment Bond Agreement – Hotel Staff</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+      padding: 20px;
+    }
+
+    .page {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 10mm 16mm;
+      border: 1.5px solid #333;
+    }
+
+    /* ── HEADER ── */
+    .header { text-align: center; margin-bottom: 6px; }
+    .hotel-name {
+      font-size: 17pt;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .hotel-sub {
+      font-size: 9.5pt;
+      color: #444;
+      margin-top: 1px;
+    }
+    .doc-title {
+      font-size: 13pt;
+      font-weight: bold;
+      text-align: center;
+      margin: 7px 0 4px;
+      text-decoration: underline;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .ref-line {
+      font-size: 9pt;
+      text-align: right;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    hr.thick { border: none; border-top: 2px solid #111; margin: 5px 0; }
+    hr.thin  { border: none; border-top: 0.5px solid #888; margin: 4px 0; }
+
+    /* ── PARTIES BLOCK ── */
+    .parties {
+      display: flex;
+      gap: 10px;
+      margin: 5px 0;
+      font-size: 9.5pt;
+    }
+    .party { flex: 1; border: 0.8px solid #bbb; padding: 4px 7px; border-radius: 2px; }
+    .party strong { display: block; font-size: 9pt; text-transform: uppercase; color: #333; margin-bottom: 2px; }
+
+    /* ── SECTIONS ── */
+    .section { margin: 5px 0; }
+    .section-title {
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-left: 3px solid #333;
+      margin-bottom: 3px;
+    }
+
+    ol { padding-left: 16px; }
+    ol li { font-size: 9.5pt; line-height: 1.42; margin-bottom: 2px; }
+
+    .two-col { display: flex; gap: 10px; }
+    .two-col .section { flex: 1; }
+
+    /* ── TERMINATION HIGHLIGHT ── */
+    .termination li { color: #7a0000; }
+    .termination .section-title { border-left-color: #b00; background: #fff0f0; }
+
+    /* ── FIELDS ── */
+    .field {
+      display: inline-block;
+      border-bottom: 1px solid #555;
+      min-width: 110px;
+      color: #555;
+      font-style: italic;
+      font-size: 9.5pt;
+    }
+    .field-sm { min-width: 60px; }
+    .field-lg { min-width: 160px; }
+
+    /* ── DECLARATION ── */
+    .declaration {
+      font-size: 9pt;
+      border: 0.8px solid #aaa;
+      padding: 5px 8px;
+      margin: 5px 0;
+      background: #fafafa;
+      line-height: 1.5;
+    }
+
+    /* ── SIGNATURE BLOCK ── */
+    .sig-block {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 7px;
+      gap: 10px;
+    }
+    .sig { flex: 1; border-top: 1px solid #333; padding-top: 4px; font-size: 9pt; }
+    .sig .label { font-weight: bold; font-size: 8.5pt; text-transform: uppercase; }
+    .sig .sub { color: #555; font-size: 8pt; margin-top: 2px; }
+    .sig-line {
+      border-bottom: 1px solid #888;
+      height: 18px;
+      margin: 3px 0 2px;
+    }
+
+    .footer-note {
+      font-size: 7.5pt;
+      color: #666;
+      text-align: center;
+      margin-top: 5px;
+      border-top: 0.5px solid #ccc;
+      padding-top: 3px;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body { padding: 0; background: #fff; }
+      .page {
+        max-width: 100%;
+        margin: 0;
+        padding: 12mm 15mm 8mm 15mm;
+        border: none;
+        page-break-after: avoid;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 8mm 10mm;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="hotel-name">&#9679; &nbsp;[Hotel Name]&nbsp; &#9679;</div>
+    <div class="hotel-sub">
+      [Full Address], Bhopal, Madhya Pradesh &nbsp;|&nbsp;
+      GSTIN: _____________ &nbsp;|&nbsp; Ph: _____________
+    </div>
+  </div>
+
+  <hr class="thick"/>
+  <div class="doc-title">Employment Bond Agreement</div>
+  <div class="ref-line">
+    Bond Ref. No.: <span class="field field-sm">_______</span> &nbsp;&nbsp;
+    Date of Joining: <span class="field">____ / ____ / ________</span>
+  </div>
+  <hr class="thin"/>
+
+  <!-- PARTIES -->
+  <div class="parties">
+    <div class="party">
+      <strong>Employer (Party A)</strong>
+      <b>[Hotel Name]</b>, represented by its authorised signatory,
+      situated at Bhopal, Madhya Pradesh — hereinafter referred to as <b>"The Management"</b>.
+    </div>
+    <div class="party">
+      <strong>Employee (Party B)</strong>
+      Name: <span class="field field-lg">_______________________</span><br/>
+      Designation: <span class="field">___________________</span> &nbsp;
+      Dept: <span class="field field-sm">__________</span><br/>
+      Aadhaar No.: <span class="field">__________________</span>
+    </div>
+  </div>
+
+  <!-- TWO-COLUMN SECTIONS -->
+  <div class="two-col">
+
+    <div>
+      <div class="section">
+        <div class="section-title">1. Bond Period &amp; Compensation</div>
+        <ol>
+          <li>This Bond is valid for a minimum period of <b>twelve (12) months</b> from the date of joining.</li>
+          <li>Starting monthly gross salary: <b>&#8377; <span class="field field-sm">______</span>/- per month</b>, payable on the last working day of each month in accordance with the Payment of Wages Act, 1936.</li>
+          <li>Salary revision shall be conducted annually, subject to performance appraisal; increment is not guaranteed and remains at the sole discretion of Management.</li>
+          <li>The Employee shall be on probation for the first <b>three (3) months</b>. During probation, either party may terminate with seven (7) days' written notice.</li>
+          <li>Upon early exit within the bond period without valid cause, the Employee shall repay an amount equivalent to <b>two (2) months' gross salary</b> as bond penalty to the Management.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <div class="section-title">2. Leave &amp; Attendance Policy</div>
+        <ol>
+          <li>The Employee shall be entitled to <b>Two (2) Paid Leaves per calendar month</b>, accruing only after completion of <b>three (3) continuous months</b> of service with a minimum attendance of <b>90% or above</b> every month.</li>
+          <li>Unapproved absence beyond two (2) consecutive days without prior written intimation shall be treated as abandonment of service and may lead to immediate termination and forfeiture of dues.</li>
+          <li>Leave must be applied for and approved by the Department Head at least <b>48 hours in advance</b>, except in genuine medical emergencies supported by a certificate.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <div class="section-title">3. Dress Code &amp; Personal Conduct</div>
+        <ol>
+          <li>The Employee shall wear the <b>prescribed uniform</b> issued by the Management at all times during duty hours; uniform must be clean, pressed, and properly maintained.</li>
+          <li>Personal hygiene, grooming, and presentable appearance are mandatory and shall be inspected at shift commencement.</li>
+          <li>Mobile phone usage for personal purposes during active duty hours is strictly prohibited.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div>
+      <div class="section">
+        <div class="section-title">4. Duty Hours &amp; Overtime</div>
+        <ol>
+          <li>Regular duty shift: <b>8 hours per day, 6 days a week</b>, as rostered by the Management. Weekly off shall be rotational as per operational requirements.</li>
+          <li>Given the nature of the hospitality industry, the Employee <b>agrees to work overtime</b> when required due to occupancy, events, or emergencies. Overtime shall be compensated as per the Madhya Pradesh Shops &amp; Establishments Act.</li>
+          <li>Shift timings may be changed by the Management with a minimum of <b>24 hours' prior notice</b>.</li>
+        </ol>
+      </div>
+
+      <div class="section termination">
+        <div class="section-title">5. Misconduct &amp; Immediate Termination</div>
+        <ol>
+          <li><b>Reporting to duty under the influence of alcohol or any intoxicant</b> shall result in <b>immediate termination without notice or salary for that period</b>.</li>
+          <li><b>Verbal abuse, disrespect, inappropriate behaviour, or any personal remarks directed at a guest</b> shall result in <b>summary dismissal without any salary entitlement</b>.</li>
+          <li>Disclosure of confidential information pertaining to the hotel, its guests, operations, or other staff to any third party shall result in immediate termination and may invite legal action under the Indian Contract Act, 1872.</li>
+          <li>Theft, fraud, misappropriation of hotel property or cash shall be treated as a cognizable offence and reported to the appropriate police authority.</li>
+          <li>Repeated misconduct (three or more instances) of any nature, even if minor, shall constitute a ground for summary dismissal after due inquiry.</li>
+          <li>Abandoning duty without intimation for <b>three (3) or more days</b>, even if subsequently apologised for, shall be treated as willful desertion and termination notice shall be issued.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <div class="section-title">6. Notice Period &amp; Resignation</div>
+        <ol>
+          <li>After completion of probation, either party must give <b>30 days' written notice</b> before resignation or termination (other than summary dismissal).</li>
+          <li>Management reserves the right to relieve the Employee immediately upon payment of one month's salary in lieu of notice.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div><!-- end two-col -->
+
+  <!-- GENERAL CLAUSES -->
+  <div class="section" style="margin-top:4px;">
+    <div class="section-title">7. General Clauses</div>
+    <ol style="column-count:2; column-gap:18px;">
+      <li>This Agreement is governed by the <b>laws of India</b>, including the Industrial Employment (Standing Orders) Act, 1946, the Payment of Wages Act, 1936, and applicable MP State Labour laws.</li>
+      <li>All disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the competent courts of <b>Bhopal, Madhya Pradesh</b>.</li>
+      <li>The Employee confirms having received a copy of the Hotel's Code of Conduct and agrees to abide by it.</li>
+      <li>This document, once signed, constitutes a legally binding agreement between both parties.</li>
+    </ol>
+  </div>
+
+  <!-- DECLARATION -->
+  <div class="declaration">
+    I, <span class="field field-lg">________________________</span> (Employee), hereby declare that I have read and fully understood all terms and conditions stated in this Employment Bond Agreement. I agree to abide by them in their entirety and acknowledge that any breach may result in termination, financial penalty, or legal action as specified herein.
+  </div>
+
+  <!-- SIGNATURE BLOCK -->
+  <div class="sig-block">
+    <div class="sig">
+      <div class="sig-line"></div>
+      <div class="label">Employee Signature</div>
+      <div class="sub">Name: ________________________________</div>
+      <div class="sub">Date: _____________ &nbsp; Place: Bhopal</div>
+      <div class="sub">Thumb Impression (if illiterate): ________</div>
+    </div>
+    <div class="sig">
+      <div class="sig-line"></div>
+      <div class="label">Witness Signature</div>
+      <div class="sub">Name: ________________________________</div>
+      <div class="sub">Date: _____________ &nbsp; Place: Bhopal</div>
+      <div class="sub">Relationship: _________________________</div>
+    </div>
+    <div class="sig">
+      <div class="sig-line"></div>
+      <div class="label">Authorised Signatory – Management</div>
+      <div class="sub">Name &amp; Designation: __________________</div>
+      <div class="sub">Date: _____________ &nbsp; Stamp: </div>
+      <div class="sub">[Hotel Name] &nbsp; Official Seal</div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    This document is executed in duplicate. One copy is retained by The Management and one is handed over to the Employee. &nbsp;|&nbsp;
+    Document prepared in compliance with applicable Indian Labour Laws &amp; MP Shops &amp; Establishments Act.
+  </div>
+
+</div><!-- end .page -->
+</body>
+</html>
